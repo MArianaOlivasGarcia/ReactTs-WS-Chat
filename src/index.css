@@ -1,0 +1,73 @@
+
+
+html, body {
+  font-family: Jost, sans-serif !important;
+}
+
+nav.navbar {
+  border-left: 0 !important;
+}
+
+
+.userOnline {
+  border-color: #14e07a !important;
+}
+
+.userOffset {
+  border-color: #fcfeff !important;
+}
+
+.chatPageContainer {
+  position: absolute;
+  width: calc(100% - 370px);
+  height: calc(100% - 62px);
+}
+
+
+.chatNone {
+  height: 100%;
+  display: flex !important;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.myMessage {
+  background-color: #1A6CFF;
+  color: white;
+  font-size: 14px;
+  max-width: 50%;
+  width: fit-content;
+  margin: 10px 20px;
+  border-radius: 7px;
+  border-top-right-radius: 0px;
+  padding: 2px 11px;
+  margin-left: auto;
+}
+
+.friendMessage {
+  background-color: #AEB4B7;
+  max-width: 50%;
+  font-size: 14px;
+  width: fit-content;
+  margin: 10px 20px;
+  border-radius: 7px;
+  border-top-left-radius: 0px;
+  padding: 2px 11px;
+}
+
+
+.isOnlineIcon {
+  width: 8px;
+  height: 8px; 
+  border-radius: 100%;
+  background-color: #13E07A;
+}
+
+.isOfflineIcon {
+  width: 8px;
+  height: 8px; 
+  border-radius: 100%;
+  background-color: red;
+}

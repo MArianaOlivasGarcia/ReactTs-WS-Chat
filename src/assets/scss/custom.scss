@@ -1,0 +1,90 @@
+
+
+$primary: #1A6CFF;
+$secondary: #B22BFF;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+    --offcanvas-width: 370px;
+    --navbar-height: 62px;
+    --chatinput-height: 62px;
+}
+
+div.row {
+    margin: 0 !important;
+}
+
+// CHAT
+
+.sidebarNav {
+    width: var(--offcanvas-width) !important;
+}
+
+
+nav {
+    height: var(--navbar-height) !important;
+}
+
+main {
+    margin-top: var(--navbar-height);
+}
+
+@media (min-width: 992px) {
+    .offcanvas-backdrop{
+        display: none !important;
+    }
+    .sidebarNav {
+        transform: none !important;
+        visibility: visible !important;
+    }
+    main {
+        margin-left: var(--offcanvas-width);
+    }
+    nav {
+        margin-left: var(--offcanvas-width);
+    }
+}
+
+.offcanvas, .fixed-top  {
+    z-index: 1029 !important;
+}
+
+.offcanvas-backdrop{
+    z-index: 1028 !important;
+}
+
+
+div.chatInput {
+    height: var(--chatinput-height) !important;
+}
+
+div.chatSelected {
+    height: calc(100% - var(--chatinput-height)) !important;
+    overflow-y: scroll;
+    background-color: #eee;
+}
+
+//
+h3 span {
+    color: $secondary;
+}
+
+
+// INPUTS
+input.form-control {
+    border-radius: 0px;
+}
+
+
+// BUTTONS
+button.btn {
+    border-radius: 0px;
+}
+
+
+// ENLACES
+a {
+    color: $secondary;
+    text-decoration: none;
+}
